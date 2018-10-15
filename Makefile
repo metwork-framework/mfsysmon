@@ -5,7 +5,7 @@ MODULE_LOWERCASE=mfsysmon
 -include $(MFEXT_HOME)/share/main_root.mk
 
 all:: directories
-	echo "root@mfsysmon" >$(MFSYSMON_HOME)/.layerapi2_dependencies
+	echo "root@mfcom" >$(MFSYSMON_HOME)/.layerapi2_dependencies
 	cd adm && $(MAKE)
 	cd config && $(MAKE)
 
