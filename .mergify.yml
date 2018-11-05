@@ -1,27 +1,30 @@
 pull_request_rules:
 - name: metworkbot automerge
   actions:
-    merge:
-      method: rebase
-      rebase_fallback: merge
-      strict: false
+    label:
+      - Merge Now
   conditions:
     - author=metworkbot
-
 - name: integration branch
   actions:
-    merge:
-      method: rebase
-      rebase_fallback: merge
-      strict: true
-    delete_head_branch: {}
+    label:
+      - Merge Now
   conditions:
     - base=integration
     - label!=no-mergify
     - '#approved-reviews-by>=1'
     - status-success=license/cla
     - author!=metworkbot
-
     - status-success=continuous-integration/drone/pr
+- name: merge action    
+  actions:
+    merge:
+      method: rebase
+      rebase_fallback: merge
+      strict: false
+    delete_head_branch: {}
+  conditions:
+    - label!=no-mergify
+    - label=Merge Now
 
 
