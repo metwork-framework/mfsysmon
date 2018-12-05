@@ -70,4 +70,8 @@
 [[inputs.system]]
   # no configuration
 
+# Read metrics about itself
+[[inputs.internal]]
+  # no configuration
+
 {% endblock %}
