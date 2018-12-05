@@ -1,0 +1,19 @@
+{% extends "circus.ini"  %}
+{% block custom %}
+{% raw %}
+
+[watcher:telegraf_collector_custom_diskio]
+cmd={{MFSYSMON_HOME}}/bin/telegraf_collector_custom_diskio.py
+args=
+numprocesses = 1
+stdout_stream.class = FileStream
+stdout_stream.filename = {{MODULE_RUNTIME_HOME}}/log/telegraf_collector_custom_diskio.stdout
+stderr_stream.class = FileStream
+stderr_stream.filename = {{MODULE_RUNTIME_HOME}}/log/telegraf_collector_custom_diskio.stderr
+copy_env = True
+autostart = True
+respawn = True
+working_dir = {{MODULE_RUNTIME_HOME}}/tmp
+
+{% endraw %}
+{% endblock %}
