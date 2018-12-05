@@ -1,4 +1,4 @@
-BINS=_list_partitions.py
+BINS=_list_partitions.py telegraf_collector_custom_diskio.py
 
 include root.mk
 include $(MFEXT_HOME)/share/subdir_root.mk
