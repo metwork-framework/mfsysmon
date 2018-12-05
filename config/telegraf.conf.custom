@@ -22,10 +22,14 @@
 
 # Read metrics about disk IO by device
 [[inputs.diskio]]
-  ## By default, telegraf will gather stats for all devices including
-  ## disk partitions.
-  ## Setting devices will restrict the stats to the specified devices.
-  # devices = ["sda", "sdb", "vd*"]
+{% raw %}
+{% if MFSYSMON_TELEGRAF_DISKIO_DEVICES == "AUTO" %}
+  devices={{'_list_partitions.py'|shell}}
+{% else %}
+  devices={{MFSYSMON_TELEGRAF_DISKIO_DEVICES}}
+{% endif %}
+{% endraw %}
+
   ## Uncomment the following line if you need disk serial numbers.
   # skip_serial_number = false
   #
