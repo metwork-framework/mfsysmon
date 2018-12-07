@@ -15,5 +15,18 @@ autostart = True
 respawn = True
 working_dir = {{MODULE_RUNTIME_HOME}}/tmp
 
+[watcher:telegraf_collector_custom_netstat]
+cmd={{MFSYSMON_HOME}}/bin/telegraf_collector_custom_netstat.py
+args=
+numprocesses = 1
+stdout_stream.class = FileStream
+stdout_stream.filename = {{MODULE_RUNTIME_HOME}}/log/telegraf_collector_custom_netstat.stdout
+stderr_stream.class = FileStream
+stderr_stream.filename = {{MODULE_RUNTIME_HOME}}/log/telegraf_collector_custom_netstat.stderr
+copy_env = True
+autostart = True
+respawn = True
+working_dir = {{MODULE_RUNTIME_HOME}}/tmp
+
 {% endraw %}
 {% endblock %}
