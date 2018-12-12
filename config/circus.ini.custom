@@ -28,5 +28,18 @@ autostart = True
 respawn = True
 working_dir = {{MODULE_RUNTIME_HOME}}/tmp
 
+[watcher:telegraf_collector_custom_netio]
+cmd={{MFSYSMON_HOME}}/bin/telegraf_collector_custom_netio.py
+args=
+numprocesses = 1
+stdout_stream.class = FileStream
+stdout_stream.filename = {{MODULE_RUNTIME_HOME}}/log/telegraf_collector_custom_netio.stdout
+stderr_stream.class = FileStream
+stderr_stream.filename = {{MODULE_RUNTIME_HOME}}/log/telegraf_collector_custom_netio.stderr
+copy_env = True
+autostart = True
+respawn = True
+working_dir = {{MODULE_RUNTIME_HOME}}/tmp
+
 {% endraw %}
 {% endblock %}
