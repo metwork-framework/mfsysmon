@@ -40,4 +40,11 @@
 [[inputs.system]]
   # no configuration
 
+{% raw %}
+{% if MFSYSMON_TELEGRAF_EXTERNAL_SERVICE_ADDRESS != "null" %}
+[[inputs.socket_listener]]
+  service_address = "{{MFSYSMON_TELEGRAF_EXTERNAL_SERVICE_ADDRESS}}"
+{% endif %}
+{% endraw %}
+
 {% endblock %}
