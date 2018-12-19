@@ -14,6 +14,7 @@
 * add a custom implementation of diskio plugin ([43f7dd6](https://github.com/metwork-framework/mfsysmon/commit/43f7dd6))
 * add a custom netio telegraf collector ([fce7c9c](https://github.com/metwork-framework/mfsysmon/commit/fce7c9c)), closes [#42](https://github.com/metwork-framework/mfsysmon/issues/42)
 * add a custom netstat telegraf collector ([89af359](https://github.com/metwork-framework/mfsysmon/commit/89af359))
+* add an entry-point for external systems to inject metrics ([cd0f5bd](https://github.com/metwork-framework/mfsysmon/commit/cd0f5bd))
 * add telegraf monitoring ([a1e24c5](https://github.com/metwork-framework/mfsysmon/commit/a1e24c5))
 * add trigger mfsysmon-integration-tests-runner ([39d9393](https://github.com/metwork-framework/mfsysmon/commit/39d9393))
 * better diskio configuration ([0c0a34b](https://github.com/metwork-framework/mfsysmon/commit/0c0a34b))
