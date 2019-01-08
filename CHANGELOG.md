@@ -1,5 +1,10 @@
 <a name=""></a>
-# (unreleased)
+# [](https://github.com/metwork-framework/mfsysmon/compare/v0.4.1...v) (2019-01-08)
+
+
+
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/metwork-framework/mfsysmon/compare/v0.4.0...v0.4.1) (2019-01-08)
 
 
 ### Bug Fixes
