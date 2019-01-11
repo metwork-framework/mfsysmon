@@ -5,6 +5,9 @@
 - add a custom netio telegraf collector
 - add an entry-point for external systems to inject metrics
 
+<a name="v0.4.2"></a>
+## [v0.4.2] - 2019-01-09
+
 <a name="v0.4.1"></a>
 ## [v0.4.1] - 2019-01-08
 
