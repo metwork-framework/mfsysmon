@@ -11,14 +11,44 @@ You must:
 
 ## Install mfsysmon metwork package
 
+## Full installation
+
 You just have to execute the following command (as `root` user):
 
 ```
 yum install metwork-mfsysmon
 ```
 
-Of course, you can install several metwork packages on the same linux box.
+## Minimal installation
 
+If you prefer to start with a minimal installation, you have to execute the following command
+(as `root` user):
+
+```
+yum install metwork-mfsysmon-minimal
+```
+
+## Addons
+
+### Dependencies addons
+
+```
+# To install some devtools
+yum install metwork-mfext-devtools
+
+# To install some scientific libraries
+yum install metwork-mfext-scientific
+
+# To install python2 support
+# (including corresponding scientific and devtools addons)
+yum install metwork-mfext-python2
+```
+
+
+
+
+
+## Services
 
 You can start corresponding services with the root command:
 
@@ -36,8 +66,6 @@ Or you can also reboot your computer (because metwork services are started autom
 To uninstall mfsysmon metwork package, please stop corresponding metwork services with the `root` command:
 
 ```
-# note: this is not necessary with mfext or mfcom
-# because there is no corresponding services
 service metwork stop mfsysmon
 ```
 
@@ -47,6 +75,29 @@ Then, use the following command (still as `root` user):
 ```
 yum remove "metwork-mfsysmon*"
 ```
+
+## Upgrade mfsysmon metwork package
+
+To upgrade mfsysmon metwork package, use the following commands (still as `root` user):
+
+
+```
+# We stop mfsysmon services
+service metwork stop mfsysmon
+```
+
+
+```
+# We upgrade mfsysmon metwork package
+yum upgrade "metwork-mfsysmon*"
+```
+
+
+```
+# We start mfsysmon services
+service metwork start mfsysmon
+```
+
 
 ## Uninstall all metwork packages
 
