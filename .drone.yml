@@ -56,6 +56,7 @@ integration_tests_common: &integration_tests_common
     - echo -e "baseurl=http://metwork-framework.org/pub/metwork/continuous_integration/rpms/${DRONE_BRANCH}/${OS_VERSION}/" >> /etc/yum.repos.d/metwork.repo
     - echo -e "gpgcheck=0\n\enabled=1\n\metadata_expire=0\n" >>/etc/yum.repos.d/metwork.repo
     - yum -y localinstall metwork-mfsysmon*.rpm
+    - echo "Test JBV"
     - su --command="mfsysmon.init" - mfsysmon
     - su --command="mfsysmon.start" - mfsysmon
     - su --command="cd `pwd`/integration_tests; make" - mfsysmon
