@@ -5,6 +5,7 @@
 - Changes in management of layer dependencies and metapackage names (only minimal and full) Associated with changes in mfext _metwork.spec, this reduces the number of layers installed by default when installing mfsysmon (only necessary mfext layers are installed) Metapackage metwork-mfsysmon-minimal only installs the necessary layers for mfsysmon to work properly Metapackage metwork-mfsysmon or metwork-mfbase-full installs all mfsysmon layers
 - add a custom netio telegraf collector
 - add an entry-point for external systems to inject metrics
+- execute integration tests directly from mfsysmon module and lauch them on a pull request on the module
 
 <a name="v0.4.2"></a>
 ## [v0.4.2] - 2019-01-09
