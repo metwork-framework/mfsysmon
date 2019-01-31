@@ -111,7 +111,7 @@ pipeline:
       - /buildcache:/buildcache
     when:
       event: tag
-      tag: v*
+      branch: [ release_* ]
 
   build_integration:
     <<: *build_common
