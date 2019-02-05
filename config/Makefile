@@ -1,4 +1,4 @@
-CONFIGS=config.ini
+CONFIGS=config.ini mflog_override.conf
 
 include ../adm/root.mk
 include $(MFEXT_HOME)/share/subdir_root.mk
