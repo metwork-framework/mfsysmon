@@ -1,6 +1,9 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="v0.5.4"></a>
+## [v0.5.4] - 2019-01-31
+
 <a name="v0.5.3"></a>
 ## [v0.5.3] - 2019-01-31
 
@@ -21,11 +24,11 @@
 <a name="v0.4.2"></a>
 ## [v0.4.2] - 2019-01-09
 
-<a name="v0.4.0"></a>
-## [v0.4.0] - 2019-01-08
-
 <a name="v0.4.1"></a>
 ## [v0.4.1] - 2019-01-08
+
+<a name="v0.4.0"></a>
+## [v0.4.0] - 2019-01-08
 ### Feat
 - add (only one) integration test (mfsysmon.start/status/stop is working)
 - add a custom implementation of diskio plugin
