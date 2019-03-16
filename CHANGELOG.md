@@ -1,6 +1,9 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="v0.5.7"></a>
+## [v0.5.7] - 2019-02-16
+
 <a name="v0.5.6"></a>
 ## [v0.5.6] - 2019-02-09
 
