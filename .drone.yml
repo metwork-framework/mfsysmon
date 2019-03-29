@@ -33,14 +33,18 @@ build_common: &build_common
     - export METWORK_BUILD_OS=${OS_VERSION}
 
     - mkdir -p /opt/metwork-mfsysmon-$${TARGET_DIR}
+
     - make
+
 
     - make doc
     - rm -Rf html_doc
     - cp -Rf /opt/metwork-mfsysmon-$${TARGET_DIR}/html_doc .
 
+
     - make test
     - make RELEASE_BUILD=${DRONE_BUILD_NUMBER} rpm
+
     - mv /opt/metwork-mfsysmon-$${TARGET_DIR}/*.rpm .
 
 
