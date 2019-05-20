@@ -1,11 +1,23 @@
-.. mfsysmon documentation master file, created by
-   sphinx-quickstart on Fri May  5 17:31:54 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to mfsysmon's documentation!
-====================================
-
+MFSYSMON documentation
+======================
 .. toctree::
+   :numbered:
+   :caption: Table of Contents
+   :name: mfdatatoc
+   :maxdepth: 3
 
-    layer_root
+   mfsysmon_intro
+   configure_metwork_repo
+   install_a_metwork_package
+   configure_a_metwork_package
+   mfsysmon_miscellaneous
+   layer_root
+   layer_default
+   todo
+   changelogs
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`search`
