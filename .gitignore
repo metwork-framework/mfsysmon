@@ -11,5 +11,5 @@ doc/install_a_metwork_package.md
 doc/install_a_metwork_package.rst
 doc/mfsysmon_intro.rst
 doc/mfsysmon_miscellaneous.rst
-CHANGELOG*.md
-CHANGELOG*.rst
+doc/CHANGELOG*.md
+doc/CHANGELOG*.rst
