@@ -22,6 +22,8 @@ The retrieved metrics are sent to [telegraf server agent](https://www.influxdata
 
 [StatsD](https://github.com/statsd/statsd)is a simple protocol for sending application metrics via UDP.
 
+Circus acts as a process watcher and runner. You may check the full `circus.ini` configuration file in the `/home/mfsysmon/tmp/config_auto/` directory. Check the [Circus architecture](https://circus.readthedocs.io/en/latest/design/architecture/)
+
 :index:`Dashboards` are available through :doc:`The MFADMIN module <mfadmin:index>`.
 
 .. seealso::
