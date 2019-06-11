@@ -20,15 +20,15 @@ The retrieved metrics are sent to [telegraf server agent](https://www.influxdata
 
 [Telegraf](https://docs.influxdata.com/telegraf/) is a plugin-driven server agent for collecting and sending metrics and events from databases, systems, and IoT sensors.
 
-[StatsD](https://github.com/statsd/statsd)is a simple protocol for sending application metrics via UDP.
+`mflog2mfadmin` (based on [jsonlog2elasticsearch](https://github.com/metwork-framework/jsonlog2elasticsearch)) on is a daemon to send [mflog](https://github.com/metwork-framework/mflog) to elasticsearch.
 
 Circus acts as a process watcher and runner. You may check the full `circus.ini` configuration file in the `/home/mfsysmon/tmp/config_auto/` directory. Check the [Circus architecture](https://circus.readthedocs.io/en/latest/design/architecture/)
 
-:index:`Dashboards` are available through :doc:`The MFADMIN module <mfadmin:index>`.
+:index:`Monitoring` and :index:`Dashboards` are available through :doc:`MFADMIN <mfadmin:mfadmin_monitoring_plugins>`.
 
 .. seealso::
-    | `Sending StatsD Metrics to Telegraf & InfluxDB <https://www.influxdata.com/blog/getting-started-with-sending-statsd-metrics-to-telegraf-influxdb/>`_
-    | `Telegraf StatsD input plugin <https://github.com/influxdata/telegraf/tree/master/plugins/inputs/statsd>`_ 
+    | :doc:`MFADMIN Documentation <mfadmin:index>`
+    | :doc:`mfadmin:mfadmin_monitoring_plugins`.
 
 <!--
 Intentional comment to prevent m2r from generating bad rst statements when the file ends with a block .. xxx ::
