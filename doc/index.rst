@@ -13,7 +13,6 @@ MFSYSMON documentation
    mfsysmon_miscellaneous
    layer_root
    layer_default
-   todo
    changelogs
 
 Indices and tables
