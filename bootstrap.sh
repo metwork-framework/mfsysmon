@@ -68,7 +68,7 @@ fi
 MODULE_HOME=$(get_abs_filename "${PREFIX}")
 export MODULE_HOME
 export MODULE=MFSYSMON
-export MODULE_LOWERCASE=mfserv
+export MODULE_LOWERCASE=mfsysmon
 SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export SRC_DIR
 
