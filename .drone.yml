@@ -204,7 +204,7 @@ pipeline:
   integration_tests_integration:
     <<: *integration_tests_common
     
-    image: metwork/docker-mfxxx-${OS_VERSION}-testimage:integration
+    image: metwork/mfxxx-${OS_VERSION}-testimage:integration
     
     environment:
       - DEP_BRANCH=integration
@@ -216,7 +216,7 @@ pipeline:
   integration_tests:
     <<: *integration_tests_common
     
-    image: metwork/docker-mfxxx-${OS_VERSION}-testimage:${DRONE_BRANCH}
+    image: metwork/mfxxx-${OS_VERSION}-testimage:${DRONE_BRANCH}
     
     environment:
       - DEP_BRANCH=${DRONE_BRANCH}
