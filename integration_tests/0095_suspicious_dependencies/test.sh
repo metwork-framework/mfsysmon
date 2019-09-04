@@ -4,11 +4,11 @@
 
 export PATH=${PATH}:${PWD}/..
 RET=0
-
+FIC_DEPS=`pwd`/deps
 
 cd "${MODULE_HOME}" || exit 1
-external_dependencies.sh >deps
-for F in $(cat deps); do
+external_dependencies.sh >${FIC_DEPS}
+for F in $(cat ${FIC_DEPS}); do
     N=$(ldd "${F}" 2>/dev/null |grep -c metwork)
     if test "$N" -gt 0; then
         echo "***** $F *****"
@@ -24,7 +24,7 @@ for F in $(cat deps); do
 done
 
 
-rm -f deps
+rm -f ${FIC_DEPS}
 if test "${RET}" = "1"; then
     echo "suspicious dependencies found"
     #exit 1
