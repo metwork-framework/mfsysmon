@@ -1,5 +1,5 @@
-MODULE=MFSYSMON
-MODULE_LOWERCASE=mfsysmon
+MFMODULE=MFSYSMON
+MFMODULE_LOWERCASE=mfsysmon
 
 -include adm/root.mk
 -include $(MFEXT_HOME)/share/main_root.mk

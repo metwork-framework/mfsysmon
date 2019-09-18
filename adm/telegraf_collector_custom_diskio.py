@@ -7,8 +7,8 @@ from datetime import datetime
 from telegraf_unixsocket_client import TelegrafUnixSocketClient
 from mflog import getLogger
 
-MODULE_RUNTIME_HOME = os.environ["MODULE_RUNTIME_HOME"]
-SOCKET_PATH = os.path.join(MODULE_RUNTIME_HOME, "var", "telegraf.socket")
+MFMODULE_RUNTIME_HOME = os.environ["MFMODULE_RUNTIME_HOME"]
+SOCKET_PATH = os.path.join(MFMODULE_RUNTIME_HOME, "var", "telegraf.socket")
 LOGGER = getLogger("telegraf_collector_custom_diskio")
 
 
