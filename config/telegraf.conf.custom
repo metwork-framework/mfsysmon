@@ -47,4 +47,18 @@
 {% endif %}
 {% endraw %}
 
+{% raw %}
+{% if MFSYSMON_TELEGRAF_EXTERNAL_COMMANDS != "null" %}
+[[inputs.exec]]
+  commands = [
+    {% for COMMAND in MFSYSMON_TELEGRAF_EXTERNAL_COMMANDS.split(',') %}
+      "{{COMMAND}}"{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+  timeout = "10s"
+  name_suffix = "_custom"
+  data_format = "influx"
+{% endif %}
+{% endraw %}
+
 {% endblock %}
