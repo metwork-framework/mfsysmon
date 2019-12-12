@@ -1,7 +1,8 @@
 # release_0.9 CHANGELOG
 
 
-## [Unreleased]
+
+## v0.9.3 (2019-11-15)
 
 ### New Features
 - provide a way to execute external commands to collect external
