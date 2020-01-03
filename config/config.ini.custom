@@ -1,0 +1,48 @@
+{% extends "config.ini" %}
+
+{% block custom %}
+{% raw -%}
+####################
+##### TELEGRAF #####
+####################
+[telegraf]
+
+# If debug=1, all metrics are (also) dumped into telegraf.log file
+debug=0
+
+# UDP port to listen for statsd protocol
+# see https://github.com/influxdata/telegraf/tree/master/plugins/inputs/statsd
+statsd_port=18129
+
+# If you want to use mfsysmon telegraf as a collector for external
+# (ie. non-metwork) metrics, you can use this to listen to a particular port
+# in TCP or UDP
+# null => no specific listening
+# tcp4://:8094 => listen to TCP port 8094
+# udp4://:8094 => listen to UDP port 8094
+# see https://github.com/influxdata/telegraf/tree/master/plugins/inputs/socket_listener
+# for details
+external_service_address=null
+
+# If you want to use mfsysmon telegraf as a collector for external
+# (ie. non-metwork) metrics, you can use this to execute some custom commands
+# to collect external things
+# see https://github.com/influxdata/telegraf/tree/master/plugins/inputs/exec
+# (the data_format is set to influx, the timeout is set to 10s and the name_suffix
+# is set to _custom)
+# you can provide a coma separated list of commands full paths
+# (null => no external commands)
+# (example: /usr/local/bin/mycollector1 --foo=bar,/usr/local/bin/mycollector2)
+external_commands=null
+
+
+##################
+##### CIRCUS #####
+##################
+[circus]
+
+# You probably don't want to change anything in this section
+endpoint=ipc://{{MFMODULE_RUNTIME_HOME}}/var/circus.socket
+pubsub_endpoint=ipc://{{MFMODULE_RUNTIME_HOME}}/var/circus_pubsub.socket
+{% endraw %}
+{% endblock %}
