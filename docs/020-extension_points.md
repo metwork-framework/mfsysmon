@@ -29,3 +29,7 @@ It's set to `null` by default but if you change it with `tcp4://:8094` for examp
 In the **MFSYSMON** configuration, under `[telegraf]` group, you will find a configuration key: `external_commands`.
 
 It's set to `null` by default but if you provide in it a coma separated list of command full paths, they will be executed through [telegraf exec plugin](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/exec). So if your provided commands output some [InfluxDB Line           Protocol format](https://docs.influxdata.com/influxdb/v1.7/write_protocols/line_protocol_tutorial/) lines, there will be parsed as metrics and sent to **MFADMIN** module.
+
+## debug
+
+If you want to debug, set the key `debug` to `1` under `[telegraf]` group and restart the **MFSYSMON** service. All metrics will be dumped in `${MFMODULE_RUNTIME_HOME}/log/telegraf.log` log file.
