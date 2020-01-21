@@ -16,44 +16,23 @@
 
 [//]: # (TABLE_OF_CONTENTS_PLACEHOLDER)
 
+## What is MFSYSMON?
+
+[MetWork Framework](http://www.metwork-framework.org) is an open source system for building and managing production grade applications or micro-services.
+
+**MFSYSMON** is the **M**etwork **F**ramework "**SYS**tem **MON**inotoring" **module**. It is a little agent which collects system metrics (RAM, CPU, Disk, Network...) and send them to a **MFADMIN** module (which stores them).
 
 
 
 
+## Quickstart, installation guide...
 
-
-
-
-
-
-
-## Cheatsheet
-
-A cheatsheet for this module is available [here](.metwork-framework/cheatsheet.md)
-
-
-
-## Reference documentation
-
-- (for **master (development)** version), see [this dedicated site](http://metwork-framework.org/pub/metwork/continuous_integration/docs/master/mfsysmon/) for reference documentation.
-- (for **latest released stable** version), see [this dedicated site](http://metwork-framework.org/pub/metwork/releases/docs/stable/mfsysmon/) for reference documentation.
+Please consult the [reference documentation](http://metwork-framework.org/pub/metwork/continuous_integration/docs/master/mfsysmon/).
 
 For very specific use cases, you might be interested in
 [reference documentation for integration branch](http://metwork-framework.org/pub/metwork/continuous_integration/docs/integration/mfsysmon/).
 
 And if you are looking for an old released version, you can search [here](http://metwork-framework.org/pub/metwork/releases/docs/).
-
-
-
-## Installation guide
-
-See [this document](.metwork-framework/install_a_metwork_package.md).
-
-
-## Configuration guide
-
-See [this document](.metwork-framework/configure_a_metwork_package.md).
-
 
 
 ## Contributing guide
