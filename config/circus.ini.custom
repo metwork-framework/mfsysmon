@@ -4,7 +4,7 @@
 
 [watcher:telegraf_collector_custom_diskio]
 cmd=log_proxy_wrapper
-args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/telegraf_collector_custom_diskio.log --stderr STDOUT -- {{MFSYSMON_HOME}}/bin/telegraf_collector_custom_diskio.py
+args=--stdout telegraf_collector_custom_diskio.log --stderr STDOUT -- {{MFSYSMON_HOME}}/bin/telegraf_collector_custom_diskio.py
 numprocesses = 1
 copy_env = True
 autostart = True
@@ -13,7 +13,7 @@ working_dir = {{MFMODULE_RUNTIME_HOME}}/tmp
 
 [watcher:telegraf_collector_custom_netstat]
 cmd=log_proxy_wrapper
-args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/telegraf_collector_custom_netstat.log --stderr STDOUT -- {{MFSYSMON_HOME}}/bin/telegraf_collector_custom_netstat.py
+args=--stdout telegraf_collector_custom_netstat.log --stderr STDOUT -- {{MFSYSMON_HOME}}/bin/telegraf_collector_custom_netstat.py
 numprocesses = 1
 copy_env = True
 autostart = True
@@ -22,7 +22,7 @@ working_dir = {{MFMODULE_RUNTIME_HOME}}/tmp
 
 [watcher:telegraf_collector_custom_netio]
 cmd=log_proxy_wrapper
-args=--stdout {{MFMODULE_RUNTIME_HOME}}/log/telegraf_collector_custom_netio.log --stderr STDOUT -- {{MFSYSMON_HOME}}/bin/telegraf_collector_custom_netio.py
+args=--stdout telegraf_collector_custom_netio.log --stderr STDOUT -- {{MFSYSMON_HOME}}/bin/telegraf_collector_custom_netio.py
 numprocesses = 1
 copy_env = True
 autostart = True
