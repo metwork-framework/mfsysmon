@@ -1,7 +1,8 @@
 # release_0.9 CHANGELOG
 
 
-## [Unreleased]
+
+## v0.9.5 (2020-02-13)
 
 ### New Features
 - publish more statistics about network
