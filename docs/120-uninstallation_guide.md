@@ -1,19 +1,28 @@
 # Uninstallation guide
 
-## How to uninstall mfext module
+## How to uninstall mfsysmon module
 
-To uninstall mfext metwork module, use the following command (as `root` user):
+To uninstall mfsysmon metwork module, use the following command (as `root` user):
 
 ```console tab="CentOS/Fedora"
-yum remove "metwork-mfext*"
+
+service metwork stop mfsysmon
+
+yum remove "metwork-mfsysmon*"
 ```
 
 ```console tab="Mageia"
-urpme "metwork-mfext*"
+
+service metwork stop mfsysmon
+
+urpme "metwork-mfsysmon*"
 ```
 
 ```console tab="SUSE"
-zypper remove "metwork-mfext*"
+
+service metwork stop mfsysmon
+
+zypper remove "metwork-mfsysmon*"
 ```
 
 ## How to uninstall all metwork modules

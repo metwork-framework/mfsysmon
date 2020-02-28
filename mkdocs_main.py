@@ -7,7 +7,7 @@ from jinja2_from_json_extension import from_json
 def define_env(env):
 
     # ***** Variables *****
-    env.variables['components'] = "../850-components"
+    env.variables['components'] = "../850-reference/100-components"
     env.variables['installation_guide'] = "../100-installation_guide"
     env.variables['addons'] = "../840-addons"
 

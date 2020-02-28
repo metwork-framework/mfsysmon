@@ -77,18 +77,4 @@ Then you can use the standard procedure described at the beginning of this docum
     You can use use the standard procedure even if your starting version is < 0.9 as
     the "patch update" is supported for all versions (without reinstalling everything).
 
-### What about if I have several versions of the same module?
 
-For this particular and complex setup, you should have several `/release_0.x/`
-packages repository configurations. Be sure not to have `/stable/` configurations.
-
-Then, you can use the standard procedure described at the beginning of this document
-to do a "patch update" of each major/minor installed version.
-
-**You just have to add the corresponding `-X.Y*` suffix to package update commands**
-
-For example: `yum update metwork-*-0.8*`
-
-!!! note
-    You can use use the standard procedure even if your starting version is < 0.9 as
-    the "patch update" is supported for all versions (without reinstalling everything).
