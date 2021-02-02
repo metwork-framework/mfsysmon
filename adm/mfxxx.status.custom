@@ -1,0 +1,12 @@
+{% extends "mfxxx.status" %}
+
+[watcher:telegraf_collector_custom_diskio]
+[watcher:telegraf_collector_custom_netstat]
+[watcher:telegraf_collector_custom_netio]
+
+
+{% block custom %}
+    circus_status_watcher.sh telegraf_collector_custom_diskio || RES=1
+    circus_status_watcher.sh telegraf_collector_custom_netstat || RES=1
+    circus_status_watcher.sh telegraf_collector_custom_netio || RES=1
+{% endblock %}
