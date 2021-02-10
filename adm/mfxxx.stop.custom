@@ -1,0 +1,6 @@
+{% extends "mfxxx.stop" %}
+
+{% block custom %}
+    _circus_schedule_stop_watcher.sh telegraf_collector_custom_diskio telegraf_collector_custom_netstat telegraf_collector_custom_netio
+    _circus_wait_watcher_stopped.sh telegraf_collector_custom_diskio telegraf_collector_custom_netstat telegraf_collector_custom_netio
+{% endblock %}

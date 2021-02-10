@@ -1,0 +1,9 @@
+{% extends "mfxxx.start" %}
+
+{% block custom %}
+    _circus_wait_watcher_started.sh telegraf || RES=1
+    _circus_schedule_start_watcher.sh telegraf_collector_custom_diskio telegraf_collector_custom_netstat telegraf_collector_custom_netio || RES=1
+    if test "${RES}" = "0"; then
+        _circus_wait_watcher_started.sh telegraf_collector_custom_diskio telegraf_collector_custom_netstat telegraf_collector_custom_netio  || RES=1
+    fi
+{% endblock %}
