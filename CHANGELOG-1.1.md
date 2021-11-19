@@ -2,6 +2,8 @@
 
 ## v1.1.0 (2021-05-01)
 
-- No interesting change
+### Bug Fixes
+
+- fix some stop/start issues (#111)
 
 
