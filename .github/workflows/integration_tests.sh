@@ -12,7 +12,6 @@ echo -e "baseurl=http://metwork-framework.org/pub/metwork/continuous_integration
 echo -e "gpgcheck=0\n\enabled=1\n\metadata_expire=0\n" >>/etc/yum.repos.d/metwork.repo
 
 
-
     yum -y localinstall ./rpms/metwork-mfsysmon*.rpm
     yum -y install make
     su --command="mfsysmon.init" - mfsysmon
@@ -20,5 +19,4 @@ echo -e "gpgcheck=0\n\enabled=1\n\metadata_expire=0\n" >>/etc/yum.repos.d/metwor
     su --command="mfsysmon.status" - mfsysmon
     if test -d "integration_tests"; then chown -R mfsysmon integration_tests; cd integration_tests; su --command="cd `pwd`; ./run_integration_tests.sh" - mfsysmon; cd ..; fi
     su --command="mfsysmon.stop" - mfsysmon
-
 
