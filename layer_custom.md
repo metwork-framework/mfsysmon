@@ -1,7 +1,7 @@
 {% extends "layer.md" %}
 
 {% block overview %}
-This is the `root` layer of the MFSYSCOM module.
+This is the `root` layer of the MFSYSMON module.
 
 This layer mainly includes core libraries and utilities like :
 
