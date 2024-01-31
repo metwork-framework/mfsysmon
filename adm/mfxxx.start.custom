@@ -1,7 +1,10 @@
 {% extends "mfxxx.start" %}
 
 {% block custom %}
-    _circus_wait_watcher_started.sh telegraf || RES=1
+    # Next line is unactivated to fix https://github.com/metwork-framework/mfsysmon/issues/135 when $ADMIN_HOSTNAME is "null"
+    # _circus_wait_watcher_started.sh telegraf || RES=1
+    # telegraf watcher will be started just after when $ADMIN_HOSTNAME is not "null"
+    # (see https://github.com/metwork-framework/mfext/blob/master/adm/templates/mfxxx.start)
     _circus_schedule_start_watcher.sh telegraf_collector_custom_diskio telegraf_collector_custom_netstat telegraf_collector_custom_netio || RES=1
     if test "${RES}" = "0"; then
         _circus_wait_watcher_started.sh telegraf_collector_custom_diskio telegraf_collector_custom_netstat telegraf_collector_custom_netio  || RES=1
