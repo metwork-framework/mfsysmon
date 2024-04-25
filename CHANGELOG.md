@@ -6,6 +6,10 @@
 
 - add initscripts, make and crontab as dependencies (backport #137) (#138)
 
+### Bug Fixes
+
+- fix mfsysmon.start when ADMIN_HOSTNAME is null (#136)
+
 ## v2.2.1 (2023-12-01)
 
 - No interesting change
