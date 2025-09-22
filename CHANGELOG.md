@@ -1,5 +1,11 @@
 # release_2.1 CHANGELOG
 
+## [Unreleased]
+
+### New Features
+
+- add iproute (for netstat and ss) as required dependency (#143)
+
 ## v2.1.1 (2023-10-10)
 
 ### New Features
