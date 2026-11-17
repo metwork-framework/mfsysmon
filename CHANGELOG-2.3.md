@@ -1,5 +1,12 @@
 # release_2.3 CHANGELOG
 
+## v2.3.2 (2026-11-02)
+
+### New Features
+
+- add iproute (for netstat and ss) as required dependency (#143)
+- add check_delay in circus arbiter config setting (backport #148) (#149)
+
 ## v2.3.1 (2025-05-14)
 
 - No interesting change
